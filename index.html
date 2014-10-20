@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8" />
+		<title> &lt;GoWild&gt; </title>
+
+<style type="text/css">
+/* CSS For Dropdown Menu Start */ 
+  ul   
+  {   
+  list-style:none;   
+  padding:0px;   
+  margin-top:0px;
+  }   
+form
+  {
+  list-style:none;   
+  padding:0px;   
+  margin-top:300px; 
+  }
+
+ul li   
+  {   
+  display:inline;   
+  float:right; 
+  position:relative;  
+  }
+ul li a   
+  {   
+  color:#ffffff;   
+  background:#990E00; 
+  margin-top:0px;  
+  margin-right:5px;   
+  font-weight:bold;   
+  font-size:12px;      
+  display:block;   
+  width:100px;   
+  height:25px;   
+  line-height:25px;   
+  text-align:center;      
+  border: 1px solid #560E00;   
+  }   
+  
+ul li a:hover   
+  {   
+  color:#cccccc;   
+  background:#560E00;   
+  font-weight:bold;      
+  display:block;   
+  width:100px;   
+  text-align:center;      
+  border: 1px solid #000000;   
+  } 
+  
+ul li.menu   
+  {   
+  display:inline;   
+  float:left;
+  margin-top:150px; 
+  position: relative;
+  }  
+ul li.menu a
+{
+   color:#ffffff;   
+  background:#990E00;   
+  margin-right:5px;   
+  font-weight:bold;   
+  font-size:15px;      
+  display:block;   
+  width:150px;   
+  height:25px;   
+  line-height:25px;   
+  text-align:center;      
+  border: 1px solid #560E00;   
+  }   
+
+  
+ul li.submenu a   
+  {   
+  color:#000000;   
+  background:#f6f6f6;   
+  border-bottom:1px solid #cccccc;   
+  font-weight:normal;   
+  text-decoration:none;   
+  display:block;   
+  width:150px;   
+  text-align:center;   
+  margin-top:2px;   
+  }   
+ 
+ul li.submenu a:hover   
+  {   
+  color:#000000;   
+  background:#FFEFC6;   
+  font-weight:normal;   
+  text-decoration:none;   
+  display:block;   
+  width:150px;   
+  text-align:center;   
+  }   
+  
+ul li.submenu   
+  {   
+  display:none;   
+  }   
+
+
+
+
+
+/* CSS For Dropdown Menu End */
+</style>
+
+<script language="javascript" src="jslib/jquery-1.6.js"></script>
+<script language="javascript">
+$(function(){   
+  $('.mainmenu').mouseenter(function(){   
+  $('.submenu').stop(false, true).hide();   
+  
+ var submenu = $(this).parent().next();   
+  
+ submenu.css({   
+  position:'absolute',   
+  top: $(this).offset().top + $(this).height() + 'px',   
+  left: $(this).offset().left + 'px',   
+  zIndex:1000   
+  });   
+  
+ submenu.stop().slideDown(300);   
+  
+ submenu.mouseleave(function(){   
+  $(this).slideUp(300);   
+  });   
+  });   
+  }); 
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--	<link rel="stylesheet" type="text/css" href="assets/css/styles_main.css"/>
+		<link rel="icon" type="image/png" href="assets/images/common/favicon.png"> -->
+	<!--	<noscript>Please ensure JavaScript is enabled for best performance!</noscript> -->
+		        </head>
+
+	<body>
+				<a id="logo" href='index.html'>&lt;GoWild&gt;</a> <br/>
+		     		<ul class="nav_ul">
+	                              
+   					<li><a href='#sec_home'>Contract Us</a></li>
+
+   					<li><a href='#sec_about'>About us</a></li>
+
+   					<li><a href='#sec_tmstatus'>Help</a></li>         
+				</ul>
+			<div id="menudiv">
+				<ul>
+				<li class="menu"><a href="#" class="mainmenu">Banking</a></li>
+			         <li class="submenu">
+				   <a href="#">Evan</a>
+				   <a href="#">Xue</a>
+			 	   <a href="#">Loves</a>
+				   <a href="#">Melody</a>
+			 	   <a href="#">Tan</a>
+
+				 </li>
+				</ul>
+
+				<ul>
+				<li class="menu"><a href="#" class="mainmenu">Credit Card</a></li>
+			         <li class="submenu">
+				   <a href="#">Evan</a>
+				   <a href="#">Xue</a>
+			 	   <a href="#">Loves</a>
+				   <a href="#">Melody</a>
+			 	   <a href="#">Tan</a>
+				 </li>
+				</ul>
+
+				<ul>
+				<li class="menu"><a href="#" class="mainmenu">Loans</a></li>
+			         <li class="submenu">
+				   <a href="#">Evan</a>
+				   <a href="#">Xue</a>
+			 	   <a href="#">Loves</a>
+				   <a href="#">Melody</a>
+			 	   <a href="#">Tan</a>
+				 </li>
+				</ul>
+
+				<ul>
+				<li class="menu"><a href="#" class="mainmenu">Investments</a></li>
+			         <li class="submenu">
+				   <a href="#">Evan</a>
+				   <a href="#">Xue</a>
+			 	   <a href="#">Loves</a>
+				   <a href="#">Melody</a>
+			 	   <a href="#">Tan</a>
+				 </li>
+				</ul>
+			</div>	
+
+<form name="myform">
+<h1>Login</h1>
+UserName:<br/><input type="text" id="username" name="mingzi" value=""/><br/>
+Password:<br/><input type="password" id="passward1" name="mima" value=""/><br/><br/>
+<input type="button"  value="sent" onClick="check()">
+<input type="reset" value="reset"/>
+<input type="button" value="register" onClick="window.open('register.html');"></br>
+Remember Username?<input name="radio" type="radio" id="yes" value="radio1"/>Yes
+<input name="radio" type="radio" id="yes" value="radio1"/>No<br/>
+<a href="#">Forget Username</a> <a href="#">Forget Password</a>
+<hr>
+<input type="button" value="Download Andriod APP" id="AnApp" onClick="window.open(); "><br/>
+</form>
+
+</body>
+</html>
