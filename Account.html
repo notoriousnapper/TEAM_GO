@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="nav">
+      <div class="container">
+        <ul class="pull-right">
+          <li><a href="file:///Applications/XAMPP/xamppfiles/htdocs/CSE110/MainPage/MainPage.html">HOME</a></li>
+          <li><a href="#">LOGOUT</a></li>
+          <li><a href="#">HELP</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h1>Welcome, Dear Customer!</h1>
+    <div class="articles container">
+      
+      <div class="article current">
+        <div class="item row">
+          <div class="col-xs-3">
+            <p class="source">Saving Account</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="title">current balance: </p>
+          </div>
+          <div class="col-xs-3">
+            <p class="pubdate"><a href="">Help</a></p>
+          </div>
+        </div>
+        <div class="description row">
+          <div class="col-xs-3">&nbsp;</div>
+          <div class="col-xs-6">
+            <div class="row">
+              <label for = "deposit">Make a deposit:</label>
+              <input type="integer" id = "deposit" name="deposit">
+            </div>
+            <div class="row">
+              <label for = "withdraw">Make a withdraw:</label>
+              <input type="integer" id = "withdraw" name="withdraw">
+          </div>
+          <div class = "row">
+            <button type="button"><a href = "file:///Applications/XAMPP/xamppfiles/htdocs/CSE110/Account/Account.html">OK</a></button>
+          </div>
+            <p>Check out our newer plannings to help you save more!</p>
+          </div>
+          <div class="col-xs-3">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="article">
+        <div class="item row">
+          <div class="col-xs-3">
+            <p class="source">GoWild Credit Card</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="title">current balance: </p>
+          </div>
+          <div class="col-xs-3">
+            <p class="pubdate"><a href="">Help</a></p>
+          </div>
+        </div>
+        <div class="description row">
+          <div class="col-xs-3">&nbsp;</div>
+          <div class="col-xs-6">
+            <div class="row">
+              <label for = "payment">Make a payment:</label>
+              <input type="integer" id = "payment" name="payment">
+            </div>
+            <div class = "row">
+              <button type="button"><a href = "file:///Applications/XAMPP/xamppfiles/htdocs/CSE110/Account/Account.html">OK</a></button>
+            </div>
+            <p>Check out our newer plannings to help you get more rewards!</p>
+          </div>
+          <div class="col-xs-3">&nbsp;</div>
+        </div>
+      </div>
+
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
